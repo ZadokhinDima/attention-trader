@@ -59,30 +59,34 @@ When adding new Python packages:
 ```
 AttentionTrader/
 ├── data/
-│   ├── load_data.py          # Data collection script (40+ tickers)
+│   ├── load_data.py          # Data collection script (100 tickers)
 │   └── yfinance/             # CSV files with historical price data
 ├── venv/                     # Virtual environment (DO NOT MODIFY)
 ├── requirements.txt          # Python dependencies
+├── analyze_data.ipynb        # Comprehensive data analysis notebook
 ├── README.md                # User-facing documentation
 └── CLAUDE.md                # This file (AI assistant instructions)
 ```
 
 ### Key Files
 
-- **[data/load_data.py](data/load_data.py)**: Downloads historical data from Yahoo Finance for 41 tickers across:
-  - Big Tech (AAPL, MSFT, GOOGL, NVDA, META)
-  - Finance (JPM, V, BRK-B)
-  - Healthcare (UNH, JNJ, PFE)
-  - Consumer (AMZN, TSLA, MCD, WMT, KO, PG)
-  - Energy (XOM, CVX)
-  - Industrials (CAT, UNP, BA)
-  - Utilities (NEE, DUK)
-  - Real Estate REITs (PLD, AMT)
-  - Materials (LIN, FCX)
-  - Telecom (VZ, TMUS)
-  - International (TSM, ASML, TM, BABA)
-  - Crypto (BTC-USD, ETH-USD, SOL-USD)
-  - Indices (^GSPC, ^NDX, ^DJI, ^RUT)
+- **[data/load_data.py](data/load_data.py)**: Downloads historical data from Yahoo Finance for **100 tickers** across 18 categories:
+  - **Technology & AI (26)**: Big Tech, Semiconductors & Hardware, Cloud/SaaS, Cybersecurity
+  - **Finance & Fintech (10)**: Banking & Conglomerates, Payments & Fintech
+  - **Healthcare & Biotech (10)**: Weight Loss & Longevity, Pharmaceuticals & Insurance, Genomics & Innovation
+  - **Consumer (10)**: Consumer Discretionary, Consumer Staples
+  - **Energy & Industrials (11)**: Energy (Traditional/Nuclear/Green), Industrials & Materials
+  - **Real Estate, Utilities, Telecom & Media (7)**
+  - **International (6)**: ADRs from Asia, Europe, Latin America
+  - **Crypto (3)**: BTC-USD, ETH-USD, SOL-USD
+  - **Indices & Macro (7)**: Market indices, Dollar Index, Gold Futures, Crude Oil
+
+- **[analyze_data.ipynb](analyze_data.ipynb)**: Jupyter notebook with comprehensive data analysis including:
+  - Dataset overview and metadata collection
+  - Temporal coverage analysis
+  - Data quality checks
+  - Category breakdown with statistics
+  - Price and volume visualizations for all 18 categories
 
 - **[requirements.txt](requirements.txt)**: Python package dependencies with version constraints
 

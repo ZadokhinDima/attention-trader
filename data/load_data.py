@@ -6,74 +6,79 @@ output_dir = "./data/yfinance"
 os.makedirs(output_dir, exist_ok=True)
 
 tickers = {
-    # Big Tech - Major technology companies driving market trends
-    "AAPL": "apple",
-    "MSFT": "microsoft",
-    "GOOGL": "alphabet",
-    "NVDA": "nvidia",
-    "META": "meta",
+    # --- TECHNOLOGY & AI ---
+    # Big Tech - The "Magnificent" drivers of the SP500
+    "AAPL": "apple", "MSFT": "microsoft", "GOOGL": "alphabet", 
+    "NVDA": "nvidia", "META": "meta", "AMZN": "amazon", "TSLA": "tesla",
     
-    # Finance - Banks, payment processors, and financial conglomerates
-    "JPM": "jpmorgan",
-    "V": "visa",
-    "BRK-B": "berkshire_hathaway",
+    # Semiconductors & Hardware - The AI backbone
+    "AMD": "amd", "AVGO": "broadcom", "ARM": "arm_holdings",
+    "MU": "micron", "SMCI": "super_micro_computer", "INTC": "intel",
+    "QCOM": "qualcomm", "AMAT": "applied_materials",
     
-    # Healthcare - Insurance, pharmaceuticals, and medical devices
-    "UNH": "unitedhealth",
-    "JNJ": "johnson_and_johnson",
-    "PFE": "pfizer",
+    # Cloud, Software & SaaS
+    "CRM": "salesforce", "ORCL": "oracle", "NOW": "servicenow", 
+    "PLTR": "palantir", "SNOW": "snowflake", "ADBE": "adobe",
     
-    # Consumer Discretionary - E-commerce, automotive, restaurants
-    "AMZN": "amazon",
-    "TSLA": "tesla",
-    "MCD": "mcdonalds",
+    # Cybersecurity - Mission-critical enterprise tech
+    "PANW": "palo_alto_networks", "CRWD": "crowdstrike", 
+    "FTNT": "fortinet", "ZS": "zscaler", "OKTA": "okta",
     
-    # Consumer Staples - Retail, beverages, household products
-    "WMT": "walmart",
-    "KO": "coca_cola",
-    "PG": "procter_gamble",
+    # --- FINANCE & FINTECH ---
+    # Banking & Conglomerates
+    "JPM": "jpmorgan", "BAC": "bank_of_america", "GS": "goldman_sachs", 
+    "MS": "morgan_stanley", "BRK-B": "berkshire_hathaway",
     
-    # Energy - Oil and gas majors
-    "XOM": "exxonmobil",
-    "CVX": "chevron",
+    # Payments & Fintech
+    "V": "visa", "MA": "mastercard", "PYPL": "paypal", 
+    "SQ": "block", "COIN": "coinbase",
     
-    # Industrials - Heavy machinery, railroads, aerospace
-    "CAT": "caterpillar",
-    "UNP": "union_pacific",
-    "BA": "boeing",
+    # --- HEALTHCARE & BIOTECH ---
+    # Weight Loss & Longevity (The 2025 GLP-1 Boom)
+    "LLY": "eli_lilly", "NVO": "novo_nordisk", 
     
-    # Utilities - Power generation and distribution
-    "NEE": "nextera_energy",
-    "DUK": "duke_energy",
+    # Pharmaceuticals & Insurance
+    "UNH": "unitedhealth", "JNJ": "johnson_and_johnson", 
+    "PFE": "pfizer", "ABBV": "abbvie", "AMGN": "amgen",
     
-    # Real Estate - REITs covering logistics and telecom infrastructure
-    "PLD": "prologis",
-    "AMT": "american_tower",
+    # Genomics & Innovation
+    "ILMN": "illumina", "CRSP": "crispr_therapeutics", "VRTX": "vertex",
     
-    # Materials - Industrial gases and mining
-    "LIN": "linde",
-    "FCX": "freeport_mcmoran",
+    # --- CONSUMER SECTORS ---
+    # Consumer Discretionary (Retail & Travel)
+    "MCD": "mcdonalds", "SBUX": "starbucks", "NKE": "nike", 
+    "BKNG": "booking_holdings", "HD": "home_depot", "COST": "costco",
     
-    # Telecom - Wireless and communications services
-    "VZ": "verizon",
-    "TMUS": "tmobile",
+    # Consumer Staples (Essentials)
+    "WMT": "walmart", "KO": "coca_cola", "PEP": "pepsico", "PG": "procter_gamble",
     
-    # International - Major non-US companies (ADRs)
-    "TSM": "taiwan_semiconductor",
-    "ASML": "asml",
-    "TM": "toyota",
-    "BABA": "alibaba",
+    # --- ENERGY, MATERIALS & INDUSTRIALS ---
+    # Energy (Traditional & Nuclear/Green)
+    "XOM": "exxonmobil", "CVX": "chevron", "NEE": "nextera_energy", 
+    "VST": "vistra_corp", "OKLO": "oklo_inc", # Nuclear/Data Center focus
     
-    # Crypto - Major cryptocurrencies
-    "BTC-USD": "bitcoin",
-    "ETH-USD": "ethereum",
-    "SOL-USD": "solana",
+    # Industrials & Materials
+    "CAT": "caterpillar", "UNP": "union_pacific", "BA": "boeing", 
+    "GE": "general_electric", "LIN": "linde", "FCX": "freeport_mcmoran",
     
-    # Market Indices - Broad market benchmarks
-    "^GSPC": "sp500",
-    "^NDX": "nasdaq100",
-    "^DJI": "dow_jones",
-    "^RUT": "russell2000",
+    # --- REAL ESTATE & UTILITIES ---
+    "PLD": "prologis", "AMT": "american_tower", "DUK": "duke_energy",
+    
+    # --- TELECOM & MEDIA ---
+    "VZ": "verizon", "TMUS": "tmobile", "NFLX": "netflix", "DIS": "disney",
+    
+    # --- INTERNATIONAL (ADRs) ---
+    "TSM": "taiwan_semiconductor", "ASML": "asml", "TM": "toyota", 
+    "BABA": "alibaba", "HDB": "hdfc_bank", "MELI": "mercadolibre",
+    
+    # --- CRYPTO & DIGITAL ASSETS ---
+    "BTC-USD": "bitcoin", "ETH-USD": "ethereum", "SOL-USD": "solana",
+    
+    # --- INDICES & MACRO ---
+    "^GSPC": "sp500", "^NDX": "nasdaq100", "^DJI": "dow_jones", 
+    "^RUT": "russell2000" , "DX-Y.NYB": "us_dollar_index", 
+    "GC=F": "gold_futures",
+    "CL=F": "crude_oil",
 }
 
 # Download and save each ticker
