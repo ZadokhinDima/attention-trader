@@ -12,7 +12,7 @@ Dmytro Zadokhin
 
 ## Features
 
-- Financial data collection from Yahoo Finance (yfinance) - **100 tickers**
+- Financial data collection from Yahoo Finance (yfinance) - **101 tickers**
 - Comprehensive dataset covering 18 categories:
   - **Technology & AI** (26): Big Tech, Semiconductors, Cloud/SaaS, Cybersecurity
   - **Finance & Fintech** (10): Banking, Payments & Digital Assets
@@ -21,7 +21,7 @@ Dmytro Zadokhin
   - **Energy & Industrials** (11): Traditional/Nuclear/Green Energy, Materials
   - **Real Estate, Utilities, Telecom & Media** (7)
   - **International** (6): ADRs from Asia, Europe, Latin America
-  - **Crypto** (3): BTC, ETH, SOL
+  - **Crypto** (4): BTC, ETH, SOL, BNB
   - **Indices & Macro** (7): Market indices, Dollar Index, Gold, Crude Oil
 - Advanced data analysis with category-based visualizations
 - Price and volume charting for all 18 sectors
@@ -33,7 +33,7 @@ Dmytro Zadokhin
 AttentionTrader/
 ├── data/
 │   ├── load_data.py       # Data collection script
-│   └── yfinance/          # Downloaded CSV files for 100 tickers
+│   └── yfinance/          # Downloaded CSV files for 101 tickers
 ├── venv/                  # Python virtual environment
 ├── requirements.txt       # Python dependencies
 ├── README.md             # This file
@@ -82,7 +82,7 @@ Download historical financial data for all configured tickers:
 python data/load_data.py
 ```
 
-This will download maximum available historical data for **100 tickers** across:
+This will download maximum available historical data for **101 tickers** across:
 
 **Technology & AI (26 tickers):**
 - Big Tech: AAPL, MSFT, GOOGL, NVDA, META, AMZN, TSLA
@@ -114,8 +114,8 @@ This will download maximum available historical data for **100 tickers** across:
 **International (6 tickers):**
 - TSM, ASML, TM, BABA, HDB, MELI
 
-**Crypto (3 tickers):**
-- BTC-USD, ETH-USD, SOL-USD
+**Crypto (4 tickers):**
+- BTC-USD, ETH-USD, SOL-USD, BNB-USD
 
 **Indices & Macro (7 tickers):**
 - Indices: ^GSPC, ^NDX, ^DJI, ^RUT

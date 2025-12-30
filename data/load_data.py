@@ -72,7 +72,7 @@ tickers = {
     "BABA": "alibaba", "HDB": "hdfc_bank", "MELI": "mercadolibre",
     
     # --- CRYPTO & DIGITAL ASSETS ---
-    "BTC-USD": "bitcoin", "ETH-USD": "ethereum", "SOL-USD": "solana",
+    "BTC-USD": "bitcoin", "ETH-USD": "ethereum", "SOL-USD": "solana", "BNB-USD": "binance_coin",
     
     # --- INDICES & MACRO ---
     "^GSPC": "sp500", "^NDX": "nasdaq100", "^DJI": "dow_jones", 

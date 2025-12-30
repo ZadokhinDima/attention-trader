@@ -59,7 +59,7 @@ When adding new Python packages:
 ```
 AttentionTrader/
 ├── data/
-│   ├── load_data.py          # Data collection script (100 tickers)
+│   ├── load_data.py          # Data collection script (101 tickers)
 │   └── yfinance/             # CSV files with historical price data
 ├── venv/                     # Virtual environment (DO NOT MODIFY)
 ├── requirements.txt          # Python dependencies
@@ -70,7 +70,7 @@ AttentionTrader/
 
 ### Key Files
 
-- **[data/load_data.py](data/load_data.py)**: Downloads historical data from Yahoo Finance for **100 tickers** across 18 categories:
+- **[data/load_data.py](data/load_data.py)**: Downloads historical data from Yahoo Finance for **101 tickers** across 18 categories:
   - **Technology & AI (26)**: Big Tech, Semiconductors & Hardware, Cloud/SaaS, Cybersecurity
   - **Finance & Fintech (10)**: Banking & Conglomerates, Payments & Fintech
   - **Healthcare & Biotech (10)**: Weight Loss & Longevity, Pharmaceuticals & Insurance, Genomics & Innovation
@@ -78,7 +78,7 @@ AttentionTrader/
   - **Energy & Industrials (11)**: Energy (Traditional/Nuclear/Green), Industrials & Materials
   - **Real Estate, Utilities, Telecom & Media (7)**
   - **International (6)**: ADRs from Asia, Europe, Latin America
-  - **Crypto (3)**: BTC-USD, ETH-USD, SOL-USD
+  - **Crypto (4)**: BTC-USD, ETH-USD, SOL-USD, BNB-USD
   - **Indices & Macro (7)**: Market indices, Dollar Index, Gold Futures, Crude Oil
 
 - **[analyze_data.ipynb](analyze_data.ipynb)**: Jupyter notebook with comprehensive data analysis including:
