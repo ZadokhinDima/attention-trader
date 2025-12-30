@@ -74,7 +74,6 @@ tickers = {
     "^NDX": "nasdaq100",
     "^DJI": "dow_jones",
     "^RUT": "russell2000",
-    "^VIX": "vix_volatility",
 }
 
 # Download and save each ticker

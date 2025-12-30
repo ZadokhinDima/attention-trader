@@ -69,7 +69,7 @@ AttentionTrader/
 
 ### Key Files
 
-- **[data/load_data.py](data/load_data.py)**: Downloads historical data from Yahoo Finance for 40+ tickers across:
+- **[data/load_data.py](data/load_data.py)**: Downloads historical data from Yahoo Finance for 41 tickers across:
   - Big Tech (AAPL, MSFT, GOOGL, NVDA, META)
   - Finance (JPM, V, BRK-B)
   - Healthcare (UNH, JNJ, PFE)
@@ -82,7 +82,7 @@ AttentionTrader/
   - Telecom (VZ, TMUS)
   - International (TSM, ASML, TM, BABA)
   - Crypto (BTC-USD, ETH-USD, SOL-USD)
-  - Indices (^GSPC, ^NDX, ^DJI, ^RUT, ^VIX)
+  - Indices (^GSPC, ^NDX, ^DJI, ^RUT)
 
 - **[requirements.txt](requirements.txt)**: Python package dependencies with version constraints
 

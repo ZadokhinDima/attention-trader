@@ -20,7 +20,7 @@ Dmytro Zadokhin
   - Consumer sectors (AMZN, TSLA, WMT, KO)
   - Energy, Industrials, Utilities
   - Cryptocurrencies (BTC, ETH, SOL)
-  - Market indices (S&P 500, NASDAQ, Dow Jones, VIX)
+  - Market indices (S&P 500, NASDAQ, Dow Jones, Russell 2000)
 - Data preprocessing and analysis tools
 - Jupyter notebook support for interactive development
 
@@ -79,11 +79,11 @@ Download historical financial data for all configured tickers:
 python data/load_data.py
 ```
 
-This will download maximum available historical data for 40+ tickers including:
+This will download maximum available historical data for 41 tickers including:
 - Major US stocks across all sectors
 - International companies (TSM, ASML, TM, BABA)
 - Cryptocurrencies (BTC, ETH, SOL)
-- Market indices and volatility metrics
+- Market indices (S&P 500, NASDAQ, Dow Jones, Russell 2000)
 
 Data is saved as CSV files in `data/yfinance/` directory.
 
@@ -117,7 +117,7 @@ jupyter lab
 Financial data is sourced from Yahoo Finance using the yfinance library. The dataset includes:
 - Daily OHLCV (Open, High, Low, Close, Volume) data
 - Maximum available historical data per ticker
-- Real-time market indices and volatility metrics
+- Major market indices for benchmarking
 
 ## License
 
