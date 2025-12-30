@@ -32,7 +32,7 @@ venv.bak/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb
+# *.ipynb  # Allow notebooks in repo, only ignore checkpoints
 
 # PyCharm
 .idea/
