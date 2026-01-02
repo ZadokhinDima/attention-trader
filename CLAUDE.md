@@ -126,6 +126,22 @@ jupyter notebook
 jupyter lab
 ```
 
+### Running Jupyter Notebooks from Command Line
+
+To execute a notebook and regenerate all outputs (useful for regenerating charts, visualizations, or running complete analysis):
+
+```bash
+source venv/bin/activate
+jupyter nbconvert --to notebook --execute analyze_data.ipynb --output analyze_data.ipynb --ExecutePreprocessor.timeout=600
+```
+
+This command:
+- Executes all cells in the notebook sequentially
+- Updates the notebook file with new outputs
+- Has a 10-minute timeout per cell (600 seconds)
+- Useful for regenerating PNG charts in `images/` directory
+- Can be run as part of automated workflows or data updates
+
 ## Code Conventions
 
 ### Python Style
