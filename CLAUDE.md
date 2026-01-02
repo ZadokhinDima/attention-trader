@@ -58,19 +58,21 @@ When adding new Python packages:
 ### Project Structure
 ```
 AttentionTrader/
-├── data/
+├── executables/              # Scripts and notebooks
 │   ├── load_data.py          # Data collection script (101 tickers)
+│   └── analyze_data.ipynb    # Comprehensive data analysis notebook
+├── data/
 │   └── yfinance/             # CSV files with historical price data
+├── images/                   # Generated chart images
 ├── venv/                     # Virtual environment (DO NOT MODIFY)
 ├── requirements.txt          # Python dependencies
-├── analyze_data.ipynb        # Comprehensive data analysis notebook
-├── README.md                # User-facing documentation
-└── CLAUDE.md                # This file (AI assistant instructions)
+├── README.md                 # User-facing documentation
+└── CLAUDE.md                 # This file (AI assistant instructions)
 ```
 
 ### Key Files
 
-- **[data/load_data.py](data/load_data.py)**: Downloads historical data from Yahoo Finance for **101 tickers** across 18 categories:
+- **[executables/load_data.py](executables/load_data.py)**: Downloads historical data from Yahoo Finance for **101 tickers** across 18 categories:
   - **Technology & AI (26)**: Big Tech, Semiconductors & Hardware, Cloud/SaaS, Cybersecurity
   - **Finance & Fintech (10)**: Banking & Conglomerates, Payments & Fintech
   - **Healthcare & Biotech (10)**: Weight Loss & Longevity, Pharmaceuticals & Insurance, Genomics & Innovation
@@ -81,7 +83,7 @@ AttentionTrader/
   - **Crypto (4)**: BTC-USD, ETH-USD, SOL-USD, BNB-USD
   - **Indices & Macro (7)**: Market indices, Dollar Index, Gold Futures, Crude Oil
 
-- **[analyze_data.ipynb](analyze_data.ipynb)**: Jupyter notebook with comprehensive data analysis including:
+- **[executables/analyze_data.ipynb](executables/analyze_data.ipynb)**: Jupyter notebook with comprehensive data analysis including:
   - Dataset overview and metadata collection
   - Temporal coverage analysis
   - Data quality checks
@@ -100,8 +102,8 @@ Always use the venv Python:
 # Activate venv first
 source venv/bin/activate
 
-# Run scripts
-python data/load_data.py
+# Run scripts from executables directory
+python executables/load_data.py
 ```
 
 ### Data Collection
@@ -110,7 +112,7 @@ To refresh or update financial data:
 
 ```bash
 source venv/bin/activate
-python data/load_data.py
+python executables/load_data.py
 ```
 
 This downloads maximum available historical data and saves CSVs to `data/yfinance/`.
@@ -132,7 +134,7 @@ To execute a notebook and regenerate all outputs (useful for regenerating charts
 
 ```bash
 source venv/bin/activate
-jupyter nbconvert --to notebook --execute analyze_data.ipynb --output analyze_data.ipynb --ExecutePreprocessor.timeout=600
+jupyter nbconvert --to notebook --execute executables/analyze_data.ipynb --output executables/analyze_data.ipynb --ExecutePreprocessor.timeout=600
 ```
 
 This command:
@@ -166,7 +168,7 @@ This command:
 
 ### Adding a New Ticker
 
-Edit [data/load_data.py](data/load_data.py:8-78) and add to the `tickers` dictionary:
+Edit [executables/load_data.py](executables/load_data.py:8-78) and add to the `tickers` dictionary:
 
 ```python
 tickers = {
@@ -178,7 +180,7 @@ tickers = {
 Then run:
 ```bash
 source venv/bin/activate
-python data/load_data.py
+python executables/load_data.py
 ```
 
 ### Installing New Packages
@@ -218,7 +220,7 @@ df = pd.read_csv('data/yfinance/apple.csv', index_col=0, parse_dates=True)
 3. **Check requirements.txt**: Before running code that needs dependencies
 4. **Don't modify venv/**: This directory is auto-generated
 5. **Update requirements.txt**: When adding new packages
-6. **Run scripts from project root**: Use relative paths like `python data/load_data.py`
+6. **Run scripts from project root**: Use paths like `python executables/load_data.py`
 7. **Verify environment**: Use `which python` to confirm venv activation
 
 ## Project Goals
@@ -235,6 +237,6 @@ This is a prototype for attention-based neural networks applied to financial tim
 
 When uncertain about:
 - **Dependencies**: Check [requirements.txt](requirements.txt)
-- **Data sources**: See [data/load_data.py](data/load_data.py)
+- **Data sources**: See [executables/load_data.py](executables/load_data.py)
 - **Project structure**: Refer to this document
 - **Environment**: Verify venv is activated with `which python`
