@@ -87,16 +87,16 @@ print(f"Downloading {len(tickers)} tickers...\n")
 for ticker, filename in tickers.items():
     try:
         print(f"Downloading {ticker}...", end=" ")
-        data = yf.download(ticker, period="max", progress=False)
-        
+        data = yf.download(ticker, period="max", progress=False, auto_adjust=True)
+
         if data.empty:
             print("NO DATA")
             continue
-        
+
         filepath = f"{output_dir}/{filename}.csv"
         data.to_csv(filepath)
         print(f"OK ({len(data)} rows)")
-        
+
     except Exception as e:
         print(f"ERROR: {e}")
 
