@@ -1,0 +1,92 @@
+name,yfinance_id,category
+apple,AAPL,Big Tech
+microsoft,MSFT,Big Tech
+alphabet,GOOGL,Big Tech
+nvidia,NVDA,Big Tech
+meta,META,Big Tech
+amazon,AMZN,Big Tech
+tesla,TSLA,Big Tech
+amd,AMD,Semiconductors & Hardware
+broadcom,AVGO,Semiconductors & Hardware
+arm_holdings,ARM,Semiconductors & Hardware
+micron,MU,Semiconductors & Hardware
+super_micro_computer,SMCI,Semiconductors & Hardware
+intel,INTC,Semiconductors & Hardware
+qualcomm,QCOM,Semiconductors & Hardware
+applied_materials,AMAT,Semiconductors & Hardware
+salesforce,CRM,Cloud Software & SaaS
+oracle,ORCL,Cloud Software & SaaS
+servicenow,NOW,Cloud Software & SaaS
+palantir,PLTR,Cloud Software & SaaS
+snowflake,SNOW,Cloud Software & SaaS
+adobe,ADBE,Cloud Software & SaaS
+palo_alto_networks,PANW,Cybersecurity
+crowdstrike,CRWD,Cybersecurity
+fortinet,FTNT,Cybersecurity
+zscaler,ZS,Cybersecurity
+okta,OKTA,Cybersecurity
+jpmorgan,JPM,Banking & Conglomerates
+bank_of_america,BAC,Banking & Conglomerates
+goldman_sachs,GS,Banking & Conglomerates
+morgan_stanley,MS,Banking & Conglomerates
+berkshire_hathaway,BRK-B,Banking & Conglomerates
+visa,V,Payments & Fintech
+mastercard,MA,Payments & Fintech
+paypal,PYPL,Payments & Fintech
+block,SQ,Payments & Fintech
+coinbase,COIN,Payments & Fintech
+eli_lilly,LLY,Weight Loss & Longevity
+novo_nordisk,NVO,Weight Loss & Longevity
+unitedhealth,UNH,Pharmaceuticals & Insurance
+johnson_and_johnson,JNJ,Pharmaceuticals & Insurance
+pfizer,PFE,Pharmaceuticals & Insurance
+abbvie,ABBV,Pharmaceuticals & Insurance
+amgen,AMGN,Pharmaceuticals & Insurance
+illumina,ILMN,Genomics & Innovation
+crispr_therapeutics,CRSP,Genomics & Innovation
+vertex,VRTX,Genomics & Innovation
+mcdonalds,MCD,Consumer Discretionary
+starbucks,SBUX,Consumer Discretionary
+nike,NKE,Consumer Discretionary
+booking_holdings,BKNG,Consumer Discretionary
+home_depot,HD,Consumer Discretionary
+costco,COST,Consumer Discretionary
+walmart,WMT,Consumer Staples
+coca_cola,KO,Consumer Staples
+pepsico,PEP,Consumer Staples
+procter_gamble,PG,Consumer Staples
+exxonmobil,XOM,Energy
+chevron,CVX,Energy
+nextera_energy,NEE,Energy
+vistra_corp,VST,Energy
+oklo_inc,OKLO,Energy
+caterpillar,CAT,Industrials & Materials
+union_pacific,UNP,Industrials & Materials
+boeing,BA,Industrials & Materials
+general_electric,GE,Industrials & Materials
+linde,LIN,Industrials & Materials
+freeport_mcmoran,FCX,Industrials & Materials
+prologis,PLD,Real Estate & Utilities
+american_tower,AMT,Real Estate & Utilities
+duke_energy,DUK,Real Estate & Utilities
+verizon,VZ,Telecom & Media
+tmobile,TMUS,Telecom & Media
+netflix,NFLX,Telecom & Media
+disney,DIS,Telecom & Media
+taiwan_semiconductor,TSM,International
+asml,ASML,International
+toyota,TM,International
+alibaba,BABA,International
+hdfc_bank,HDB,International
+mercadolibre,MELI,International
+bitcoin,BTC-USD,Crypto
+ethereum,ETH-USD,Crypto
+solana,SOL-USD,Crypto
+binance_coin,BNB-USD,Crypto
+sp500,^GSPC,Indices & Macro
+nasdaq100,^NDX,Indices & Macro
+dow_jones,^DJI,Indices & Macro
+russell2000,^RUT,Indices & Macro
+us_dollar_index,DX-Y.NYB,Indices & Macro
+gold_futures,GC=F,Indices & Macro
+crude_oil,CL=F,Indices & Macro
